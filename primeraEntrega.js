@@ -1,3 +1,11 @@
+function editarDatosUsuario() {
+    alert("Volvamos a editar los datos ingresados.");
+    nombre = prompt("Ingrese su nombre");
+    edad = prompt("Ingrese su edad");
+    dni = prompt("Ingrese su DNI");
+    datosUsuario = "Nombre ingresado: " + nombre + "\nEdad: " + edad + "\nDNI: " + dni;
+    alert(datosUsuario);
+}
 
 alert("Bienvenidos al sistema de viaje CAMBA!");
 alert("Puede elegir su destino favorito dentro de la Argentina teniendo en cuenta sus gustos!");
@@ -12,12 +20,7 @@ alert(datosUsuario);
 let editarDatos = prompt("¿Está conforme con los datos ingresados?\n1 - Sí\n2 - No");
 
 if (editarDatos === "2") {
-    alert("Volvamos a editar los datos ingresados.");
-    nombre = prompt("Ingrese su nombre");
-    edad = prompt("Ingrese su edad");
-    dni = prompt("Ingrese su DNI");
-    datosUsuario = "Nombre ingresado: " + nombre + "\nEdad: " + edad + "\nDNI: " + dni;
-    alert(datosUsuario);
+    editarDatosUsuario(); // Llamar a la función para editar datos
 }
 
 alert("Sigamos con su elección de provincias que desea recorrer");
