@@ -17,7 +17,7 @@ let usuario = {
 };
 
 usuario.nombre = prompt("Ingrese su nombre");
-usuario.edad = parseInt(prompt("Ingrese su edad")); // Convertir a número
+usuario.edad = parseInt(prompt("Ingrese su edad")); 
 usuario.dni = prompt("Ingrese su DNI");
 
 let datosUsuario = "Nombre ingresado: " + usuario.nombre + "\nEdad: " + usuario.edad + "\nDNI: " + usuario.dni;
@@ -44,7 +44,7 @@ let destinos = [
 
 let opcionDestino = prompt("Ingrese el número del destino que desea visitar");
 
-// Función para buscar un destino por nombre
+
 function buscarDestinoPorNombre(nombre) {
     return destinos.find(destino => destino.nombre === nombre);
 }
