@@ -1,0 +1,83 @@
+body {
+    background-color: #c3e3fc;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+}
+
+.instruction {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#userInput, #destinos, #resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #040b33;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    background-color: #eee;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

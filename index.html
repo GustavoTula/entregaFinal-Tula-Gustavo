@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema de Viaje CAMBA</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+    <div class="container">
+        <h1>Bienvenidos al sistema de viaje CAMBA!</h1>
+        <div id="userInput">
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            <input type="number" id="edad" placeholder="Ingrese su edad">
+            <input type="text" id="dni" placeholder="Ingrese su DNI">
+            <button id="confirmarDatos">Confirmar Datos</button>
+        </div>
+        
+        <div id="destinos" style="display: none;">
+            <div class="instruction">Haga clic en el nombre del destino para elegirlo:</div>
+            <ul id="destinosList">
+                <li data-destino="Mendoza">Mendoza - $40,000</li>
+                <li data-destino="Buenos Aires">Buenos Aires - $50,000</li>
+                <li data-destino="Córdoba">Córdoba - $35,000</li>
+                <li data-destino="Santa Cruz">Santa Cruz - $70,000</li>
+            </ul>
+            <button id="confirmarDestino" style="display: none;">Confirmar Destino</button>
+        </div>
+    
+        <div id="resultado" style="display: none;"></div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
