@@ -1,0 +1,6 @@
+[
+    { "nombre": "Mendoza", "precio": 40000 },
+    { "nombre": "Buenos Aires", "precio": 50000 },
+    { "nombre": "Córdoba", "precio": 35000 },
+    { "nombre": "Santa Cruz", "precio": 70000 }
+]
